@@ -1,4 +1,57 @@
 
-<app-header></app-header>
-<app-signup></app-signup>
-<app-login></app-login>
+<!--<app-login></app-login>-->
+<!--<h1>
+  {{title}}
+</h1>
+-->
+<!--<h1 (click)='active=true'>
+    open</h1>
+<h1 (click)='active=false'>
+    close</h1>-->
+<!--<nav *ngIf="active">
+    <app-my-new></app-my-new>
+    <app-my-signup></app-my-signup>
+
+
+</nav>-->
+
+<!--27/3
+<app-homepage></app-homepage>
+<nav >
+    <app-my-new *ngIf="isSignin"></app-my-new>
+    <app-my-signup *ngIf="isSignup"></app-my-signup>
+      <p (click)="isSignup=true;isSignin=false;">Sign up</p>
+      <p (click)="isSignup=false;isSignin=true;">Sign In</p>
+</nav>-->
+
+
+
+<!--<ul>
+    <li *ngFor="let arraylist of myArray">{{arraylist}}</li>
+</ul>
+<p> {{myObj.lname}}</p>-->
+
+<router-outlet></router-outlet>
+<!--<ul>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/Signup']">SIGNUP</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/signup']">Signup</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/signin']">Signin</a>
+    </li>
+     <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/home']">Home</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/order']">Order</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/employee']">Employee</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" href="#" [routerLink]="['/dashboard']">Dashboard</a>
+    </li>
+</ul>-->
