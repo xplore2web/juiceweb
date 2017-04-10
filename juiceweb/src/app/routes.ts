@@ -12,37 +12,41 @@ import {LoginComponent} from 'app/_components/login/login.component';
 const routes: Routes = [
   // map '/persons' to the people list component
   {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
-    path: 'signin',
-    component: MyNewComponent,
-  },
-  {
     path: 'home',
     component: HomepageComponent,
   },
-  {
-    path: 'order',
-    component: OrderComponent,
+   {
+    path: 'Signup',
+    component: MySignupComponent,
   },
-  {
-    path: 'employee',
-    component: EmployeeComponent,
-  },
-  {
-    path: 'dashboard',
-    component: DashboardComponent,
-  },
-  {
-    path: 'signup',
-    component: SignupComponent,
-  },
+//  {
+//    path: 'signin',
+//    component: MyNewComponent,
+//  },
+//  {
+//    path: 'home',
+//    component: HomepageComponent,
+//  },
+//  {
+//    path: 'order',
+//    component: OrderComponent,
+//  },
+//  {
+//    path: 'employee',
+//    component: EmployeeComponent,
+//  },
+//  {
+//    path: 'dashboard',
+//    component: DashboardComponent,
+//  },
+//  {
+//    path: 'signup',
+//    component: SignupComponent,
+//  },
   // map '/' to '/persons' as our default route dashboard
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];
