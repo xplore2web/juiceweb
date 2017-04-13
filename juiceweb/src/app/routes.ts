@@ -7,6 +7,10 @@ import {EmployeeComponent} from 'app/_components/employee/employee.component';
 import {DashboardComponent} from 'app/_components/dashboard/dashboard.component';
 import {SignupComponent} from 'app/_components/signup/signup.component';
 import {LoginComponent} from 'app/_components/login/login.component';
+import { MenuComponent } from './_components/menu/menu.component';
+import { AboutComponent } from './_components/about/about.component';
+import { ProductsComponent } from './_components/products/products.component';
+
 
 // Route config let's you map routes to components
 const routes: Routes = [
@@ -16,34 +20,25 @@ const routes: Routes = [
     component: HomepageComponent,
   },
    {
-    path: 'Signup',
+    path: 'signup',
     component: MySignupComponent,
   },
-//  {
-//    path: 'signin',
-//    component: MyNewComponent,
-//  },
-//  {
-//    path: 'home',
-//    component: HomepageComponent,
-//  },
-//  {
-//    path: 'order',
-//    component: OrderComponent,
-//  },
-//  {
-//    path: 'employee',
-//    component: EmployeeComponent,
-//  },
-//  {
-//    path: 'dashboard',
-//    component: DashboardComponent,
-//  },
-//  {
-//    path: 'signup',
-//    component: SignupComponent,
-//  },
-  // map '/' to '/persons' as our default route dashboard
+   {
+    path: 'login',
+    component: LoginComponent,
+  },
+    {
+    path: 'menu',
+    component: MenuComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'products',
+    component: ProductsComponent,
+  },
   {
     path: '',
     redirectTo: '/home',

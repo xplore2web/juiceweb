@@ -1,25 +1,31 @@
-<div class="mdl-layout mdl-js-layout mdl-color--grey-100 bg-image">
-    <main class="mdl-layout__content">
-        <div class="mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
-                <h2 class="mdl-card__title-text">Feel Fresh</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <form action="#">                 
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="username" />
-                        <label class="mdl-textfield__label" for="username">Username/Email</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="password" id="userpass" />
-                        <label class="mdl-textfield__label" for="userpass">Password</label>
-                    </div>
-                </form>
-            </div>
-            <div class="mdl-layout mdl-card__actions mdl-card--border">
-                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" [routerLink]="['/home']">Log in</button>
-                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"  [routerLink]="['/signup']">Sign Up</button>
-            </div>
-        </div>
-    </main>
+<header></header>
+<div class="login-page about">
+    <img class="login-w3img" src="../assets/images/img3.jpg" alt="">
+    <div class="container"> 
+        <h3 class="w3ls-title w3ls-title1">Login to your account</h3>  
+        <div class="login-agileinfo"> 
+            <form action="#" method="post"> 
+                <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">
+                <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
+                <div class="wthreelogin-text"> 
+                    <ul> 
+                        <li>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i> 
+                                <span> Remember me ?</span> 
+                            </label> 
+                        </li>
+                        <li><a href="#">Forgot password?</a> </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>   
+                <input type="submit" value="LOGIN">
+            </form>
+            <p>Don't have an Account? <a [routerLink]="['/signup']"> Sign Up Now!</a></p> 
+        </div>	 
+    </div>
+</div>
+<<div class="copyw3-agile"> 
+    <div class="container">
+        <p>&copy; 2017 Staple Food. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+    </div>
 </div>

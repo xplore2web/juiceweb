@@ -18,6 +18,10 @@ import {HeroService} from 'app/_services/Hero-service/Hero.service';
 import {DashService} from 'app/_services/dashboard-service/dash.service';
 import { EmployeeComponent } from './_components/employee/employee.component';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
+import { FooterComponent } from './_components/footer/footer.component';
+import { MenuComponent } from './_components/menu/menu.component';
+import { AboutComponent } from './_components/about/about.component';
+import { ProductsComponent } from './_components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { DashboardComponent } from './_components/dashboard/dashboard.component'
     HomepageComponent,
     OrderComponent,
     EmployeeComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent,
+    MenuComponent,
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
