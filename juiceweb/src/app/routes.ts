@@ -10,6 +10,7 @@ import {LoginComponent} from 'app/_components/login/login.component';
 import { MenuComponent } from './_components/menu/menu.component';
 import { AboutComponent } from './_components/about/about.component';
 import { ProductsComponent } from './_components/products/products.component';
+import { ContactComponent } from './_components/contact/contact.component';
 
 
 // Route config let's you map routes to components
@@ -39,6 +40,10 @@ const routes: Routes = [
     path: 'products',
     component: ProductsComponent,
   },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },  
   {
     path: '',
     redirectTo: '/home',

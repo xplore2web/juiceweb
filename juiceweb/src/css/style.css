@@ -447,7 +447,7 @@ img.w3order-img {
     position: absolute;
     width: 15%;
     left: 8%;
-    top: 12%;
+    top: 10%;
 }
 /*-- //order --*/
 /*-- deals --*/  
@@ -1202,7 +1202,7 @@ input.item_quantity:hover{
     font-size: 1em;
     color: #353F49;
     font-weight: 500;
-    margin: 0 0 1.5em;
+/*    margin: 0 0 1.5em;*/
 }
 .checkbox i {
     position: absolute;

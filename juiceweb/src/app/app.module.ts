@@ -22,6 +22,7 @@ import { FooterComponent } from './_components/footer/footer.component';
 import { MenuComponent } from './_components/menu/menu.component';
 import { AboutComponent } from './_components/about/about.component';
 import { ProductsComponent } from './_components/products/products.component';
+import { ContactComponent } from './_components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProductsComponent } from './_components/products/products.component';
     FooterComponent,
     MenuComponent,
     AboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
