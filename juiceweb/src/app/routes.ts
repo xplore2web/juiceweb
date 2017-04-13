@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { MySignupComponent} from 'app/_components/my-signup/my-signup.component';
-import { MyNewComponent} from 'app/_components/my-new/my-new.component';
+//import { MyNewComponent} from 'app/_components/my-new/my-new.component';
 import {HomepageComponent} from 'app/_components/homepage/homepage.component';
 import {OrderComponent} from 'app/_components/order/order.component';
 import {EmployeeComponent} from 'app/_components/employee/employee.component';
