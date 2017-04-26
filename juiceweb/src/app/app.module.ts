@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './_components/signup/signup.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { LoginComponent } from './_components/login/login.component';
-import { MyNewComponent } from './_components/my-new/my-new.component';
 import { MySignupComponent } from './_components/my-signup/my-signup.component';
 import { AdminComponent } from './_components/admin/admin.component';
 import { HomepageComponent } from './_components/homepage/homepage.component';
@@ -23,6 +22,10 @@ import { MenuComponent } from './_components/menu/menu.component';
 import { AboutComponent } from './_components/about/about.component';
 import { ProductsComponent } from './_components/products/products.component';
 import { ContactComponent } from './_components/contact/contact.component';
+import { SuperadminComponent } from './_components/superadmin/superadmin.component';
+import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
+import { FranchisehpComponent } from './_components/franchisehp/franchisehp.component';
+import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,6 @@ import { ContactComponent } from './_components/contact/contact.component';
     SignupComponent,
     HeaderComponent,
     LoginComponent,
-    MyNewComponent,
     MySignupComponent,
     AdminComponent,
     HomepageComponent,
@@ -41,7 +43,11 @@ import { ContactComponent } from './_components/contact/contact.component';
     MenuComponent,
     AboutComponent,
     ProductsComponent,
-    ContactComponent
+    ContactComponent,
+    SuperadminComponent,
+    ShopadminComponent,
+    FranchisehpComponent,
+    ForgotpassComponent
   ],
   imports: [
     BrowserModule,

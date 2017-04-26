@@ -1,0 +1,28 @@
+.file-upload {
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    background: #08cae2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.6em;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 1em 0;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    transition: .5s all;
+    -webkit-appearance: button;
+    cursor: pointer;
+    /*background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Upload_alt_font_awesome.svg/512px-Upload_alt_font_awesome.svg.png") no-repeat;*/
+  
+}
+.file-upload:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    letter-spacing: 3px;
+}

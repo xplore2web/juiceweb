@@ -1982,7 +1982,7 @@ p.single-price-text {
     cursor: pointer;
     padding: 1em;
     -webkit-appearance: none;
-    width: 100%;
+    width: 32%;
     margin: 2em 0; 
 	-webkit-transition: .5s all;
 	-moz-transition: .5s all;

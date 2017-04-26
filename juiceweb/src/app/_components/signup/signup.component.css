@@ -1,4 +1,4 @@
-.mdl-layout {
+/*.mdl-layout {
     align-items: center;
     justify-content: center;
 }
@@ -7,5 +7,5 @@
     flex: none;
 }
 .bg-image{
-    /*background-image: url('../..//..//favicon.ico') no-repeat !important;*/
-}
+    background-image: url('../..//..//favicon.ico') no-repeat !important;
+}*/
