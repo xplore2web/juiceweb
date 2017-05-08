@@ -2,7 +2,7 @@ h2{
     font-size: 14px;
     font-family: verna;
     color:blue;
-    
+
 }
 form {
     border: 3px solid #f1f1f1;
@@ -10,7 +10,7 @@ form {
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
- width: 100%;
+    width: 100%;
     padding: 12px 20px;
     /* margin: 7px 0; */
     display: inline-block;
@@ -74,4 +74,49 @@ span.psw {
     .cancelbtn {
         width: 50%;
     }
+}
+
+.copyright h2{
+    display: inline-block;
+    font-family: "Arial" !important;
+    color: #f44336;
+    font-size: 20px;
+    text-align: center;
+/*    text-transform: uppercase;*/
+    width: 100%;
+    position: relative;
+}
+.copyright h2 span {
+    padding: 0px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.copyright {
+    padding: 15px 40px;
+}
+.copyright h2:before{
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,#fd463e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff000000', endColorstr='#000000',GradientType=1 );
+    left: 0;
+}
+.copyright h2:before, .copyright h2:after {
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 43%;
+    position: absolute;
+    top: 0.53em;
+    z-index: 1;
+}
+.copyright h2:after {
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, #f44336 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+    right: 0;
+    left: auto;
 }
