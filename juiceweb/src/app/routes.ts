@@ -1,6 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
 import { MySignupComponent} from 'app/_components/my-signup/my-signup.component';
-//import { MyNewComponent} from 'app/_components/my-new/my-new.component';
 import {HomepageComponent} from 'app/_components/homepage/homepage.component';
 import {OrderComponent} from 'app/_components/order/order.component';
 import {EmployeeComponent} from 'app/_components/employee/employee.component';
@@ -10,7 +9,10 @@ import {LoginComponent} from 'app/_components/login/login.component';
 import { MenuComponent } from './_components/menu/menu.component';
 import { AboutComponent } from './_components/about/about.component';
 import { ProductsComponent } from './_components/products/products.component';
-
+import { ContactComponent } from './_components/contact/contact.component';
+import { SuperadminComponent } from './_components/superadmin/superadmin.component';
+import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
+import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
 
 // Route config let's you map routes to components
 const routes: Routes = [
@@ -39,6 +41,22 @@ const routes: Routes = [
     path: 'products',
     component: ProductsComponent,
   },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  }, 
+  {
+    path: 'superadmin',
+    component: SuperadminComponent,
+  }, 
+  {
+    path: 'shopadmin',
+    component: ShopadminComponent,
+  }, 
+  {
+    path: 'forgotpass',
+    component: ForgotpassComponent,
+  }, 
   {
     path: '',
     redirectTo: '/home',
