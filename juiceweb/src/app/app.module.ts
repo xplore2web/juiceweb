@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './_components/signup/signup.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { LoginComponent } from './_components/login/login.component';
-//import { MyNewComponent } from './_components/my-new/my-new.component';
 import { MySignupComponent } from './_components/my-signup/my-signup.component';
 import { AdminComponent } from './_components/admin/admin.component';
 import { HomepageComponent } from './_components/homepage/homepage.component';
@@ -29,7 +28,6 @@ import { ProductsComponent } from './_components/products/products.component';
     SignupComponent,
     HeaderComponent,
     LoginComponent,
-    MyNewComponent,
     MySignupComponent,
     AdminComponent,
     HomepageComponent,
