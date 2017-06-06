@@ -5,7 +5,7 @@
 		<!-- banner-text -->
 		<div class="banner-text">	
 			<div class="container">
-				<h2>Delicious food from the <br> <span>Best Chefs For you.</span></h2>
+				<h2>Fresh juice from the <br> <span>Best Juice Centers For you.</span></h2>
 				<div class="agileits_search">
 					<form action="#" method="post">
 						<input name="Search" type="text" placeholder="Enter Your Area Name" required="">
@@ -30,14 +30,14 @@
 		<div class="container">
 			<div class="add-products-row">
 				<div class="w3ls-add-grids">
-					<a href="menu.html"> 
+					<a [routerLink]="['/menu']"> 
 						<h4>Get <span>20%<br>Cashback</span></h4>
 						<h5>Ordered in mobile app only </h5>
 						<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
 					</a>
 				</div>
 				<div class="w3ls-add-grids w3ls-add-grids-right">
-					<a href="menu.html"> 
+					<a [routerLink]="['/menu']"> 
 						<h4>GET Upto<span><br>40% Offer</span></h4>
 						<h5>Sunday special discount</h5>
 						<h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
@@ -52,8 +52,8 @@
 	<div class="wthree-order">  
             <img src="../../../assets/images/i2.jpg" class="w3order-img" alt=""/>
 		<div class="container">
-			<h3 class="w3ls-title">How To Order Online Food</h3>
-			<p class="w3lsorder-text">Get your favourite food in 4 simple steps.</p>
+			<h3 class="w3ls-title">How To Order Online Juice</h3>
+			<p class="w3lsorder-text">Get your favourite juice in 4 simple steps.</p>
 			<div class="order-agileinfo">  
 				<div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids"> 
 					<div class="order-w3text"> 
@@ -65,7 +65,7 @@
 				<div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids"> 
 					<div class="order-w3text"> 
 						<i class="fa fa-cutlery" aria-hidden="true"></i> 
-						<h5>Choose Food</h5>
+						<h5>Select Juice</h5>
 						<span>2</span>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 				<div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids"> 
 					<div class="order-w3text"> 
 						<i class="fa fa-truck" aria-hidden="true"></i>
-						<h5>Enjoy Food</h5>
+						<h5>Enjoy</h5>
 						<span>4</span>
 					</div>
 				</div>
@@ -99,7 +99,7 @@
 					</div> 
 					<div class="deals-right">
 						<h4>FREE DELIVERY</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
+						<p> </p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div> 
@@ -109,7 +109,7 @@
 					</div> 
 					<div class="deals-right">
 						<h4>Party Orders</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
+						<p> </p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
@@ -119,7 +119,7 @@
 					</div> 
 					<div class="deals-right">
 						<h4>Team up Scheme</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
+						<p> </p>
 					</div>
 					<div class="clearfix"> </div>
 				</div> 
@@ -129,7 +129,7 @@
 					</div> 
 					<div class="deals-right">
 						<h4>corporate orders</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
+						<p> </p>
 					</div>
 					<div class="clearfix"> </div>
 				</div> 
@@ -252,36 +252,31 @@
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
 					<h3>company</h3>
 					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contact Us</a></li>  
-						<li><a href="careers.html">Careers</a></li>  
-						<li><a href="help.html">Partner With Us</a></li>   
+						<li><a [routerLink]="['/about']">About Us</a></li>
+						<li><a [routerLink]="['/contact']">Contact Us</a></li> 	
 					</ul>
 				</div> 
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
 					<h3>help</h3>
-					<ul>
-						<li><a href="faq.html">FAQ</a></li> 
-						<li><a href="login.html">Returns</a></li>   
-						<li><a href="login.html">Order Status</a></li> 
-						<li><a href="offers.html">Offers</a></li> 
+					<ul>						  
+						<li><a [routerLink]="['/orderstatus']">Order Status</a></li> 
+						<li><a [routerLink]="['/offers']">Offers</a></li> 
 					</ul>  
 				</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
 					<h3>policy info</h3>
 					<ul>  
-						<li><a href="terms.html">Terms & Conditions</a></li>  
-						<li><a href="privacy.html">Privacy Policy</a></li>
-						<li><a href="login.html">Return Policy</a></li> 
+						<li><a [routerLink]="['/tc']">Terms & Conditions</a></li>  
+						<li><a [routerLink]="['/login']">Cancel Order</a></li> 
 					</ul>   
 				</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
 					<h3>Menu</h3> 
 					<ul>
-						<li><a href="menu.html">All Day Menu</a></li> 
-						<li><a href="menu.html">Lunch</a></li>
-						<li><a href="menu.html">Dinner</a></li>
-						<li><a href="menu.html">Flavours</a></li> 
+						<li><a [routerLink]="['/menu']">All Day Menu</a></li> 
+						<li><a [routerLink]="['/menu']">Seasonal</a></li>
+						<li><a [routerLink]="['/menu']">Regular</a></li>
+						<li><a [routerLink]="['/menu']">special</a></li> 
 					</ul>  
 				</div> 
 				<div class="clearfix"> </div>
