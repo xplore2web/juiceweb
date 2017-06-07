@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './_components/signup/signup.component';
@@ -12,9 +12,6 @@ import { HomepageComponent } from './_components/homepage/homepage.component';
 import { OrderComponent } from './_components/order/order.component';
 import {routing} from 'app/routes';
 import {Http} from '@angular/http';
-import {HttpTestService} from 'app/_services/http-service/http-test.service';
-import {HeroService} from 'app/_services/Hero-service/Hero.service';
-import {DashService} from 'app/_services/dashboard-service/dash.service';
 import { EmployeeComponent } from './_components/employee/employee.component';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
 import { FooterComponent } from './_components/footer/footer.component';
@@ -61,9 +58,10 @@ import { HelpComponent } from './_components/help/help.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    ReactiveFormsModule 
   ],
-  providers: [Http,HttpTestService,HeroService,DashService],
+  providers: [Http],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

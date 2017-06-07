@@ -13,6 +13,7 @@ import { ContactComponent } from './_components/contact/contact.component';
 import { SuperadminComponent } from './_components/superadmin/superadmin.component';
 import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
 import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
+import { FranchisehpComponent } from './_components/franchisehp/franchisehp.component';
 import { OffersComponent } from './_components/offers/offers.component';
 import { OrderstatusComponent } from './_components/orderstatus/orderstatus.component';
 import { TcComponent } from './_components/tc/tc.component';
@@ -76,6 +77,10 @@ const routes: Routes = [
   {
     path: 'forgotpass',
     component: ForgotpassComponent,
+  },
+  {
+    path: 'franchisehp',
+    component: FranchisehpComponent,
   }, 
   {
     path: '',
