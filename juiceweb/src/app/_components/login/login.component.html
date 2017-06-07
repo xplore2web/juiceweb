@@ -2,11 +2,16 @@
 <div class="login-page about">
     <img class="login-w3img" >
     <div class="container"> 
-        <h3 class="w3ls-title w3ls-title1">Login to your account</h3>  
-        <div class="login-agileinfo"> 
-            <form action="#" method="post"> 
-                <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">
-                <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
+        <form [formGroup]="loginForm"> 
+            <h3 class="w3ls-title w3ls-title1">Login to your account</h3>  
+            <div class="login-agileinfo"> 
+
+                <input class="agile-ltext" type="text" [(ngModel)]="email" name="email" formControlName="email" placeholder="Username" required="">
+                <div *ngIf="loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched" class="alert alert-danger">You must include email.</div>
+                <div *ngIf="loginForm.controls['email'].hasError('pattern') && loginForm.controls['email'].touched" class="alert alert-danger">Invalid email address.</div>
+
+                <input class="agile-ltext" type="password" [(ngModel)]="password" name="password" formControlName="password" placeholder="Password" required="">
+                <div *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched" class="alert alert-danger">You must include password.</div>
                 <div class="wthreelogin-text"> 
                     <ul> 
                         <li>
@@ -17,11 +22,13 @@
                         <li><a [routerLink]="['/forgotpass']">Forgot password?</a> </li>
                     </ul>
                     <div class="clearfix"> </div>
-                </div>   
-                <input type="submit" value="LOGIN">
-            </form>
-            <p>Don't have an Account? <a [routerLink]="['/signup']"> Sign Up Now!</a></p> 
-        </div>	 
+                </div>  
+                <div class="aligncenter">
+                    <input type="submit" class="btn-primary btn" [disabled]="!loginForm.valid" (click)="submitLogin()" value="LOGIN">
+                </div>
+                <p>Don't have an Account? <a [routerLink]="['/signup']"> Sign Up Now!</a></p> 
+            </div>	 
+        </form>
     </div>
 </div>
 <!--<div class="copyw3-agile"> 

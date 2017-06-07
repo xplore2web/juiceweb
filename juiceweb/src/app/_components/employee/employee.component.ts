@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HeroService} from 'app/_services/Hero-service/Hero.service';
+//import {HeroService} from 'app/_services/Hero-service/Hero.service';
 import {Hero} from 'app/_models/hero';
 
 @Component({
@@ -11,17 +11,17 @@ export class EmployeeComponent implements OnInit {
 
 heroes: Hero[];
 selectedHero: Hero;
-  constructor(private heroService: HeroService) { }
-
+//  constructor(private heroService: HeroService) { }
+//
   ngOnInit() {
-      this.getHeroes();
+//      this.getHeroes();
   }
 
-getHeroes():void{
-    this.heroService.getHeroes().then(
-    response =>
-    this.heroes=response);
-}
+//getHeroes():void{
+//    this.heroService.getHeroes().then(
+//    response =>
+//    this.heroes=response);
+//}
 
 onSelect(hero):void{
     this.selectedHero  = hero;

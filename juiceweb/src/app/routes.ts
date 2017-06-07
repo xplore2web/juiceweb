@@ -13,6 +13,7 @@ import { ContactComponent } from './_components/contact/contact.component';
 import { SuperadminComponent } from './_components/superadmin/superadmin.component';
 import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
 import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
+import { FranchisehpComponent } from './_components/franchisehp/franchisehp.component';
 
 // Route config let's you map routes to components
 const routes: Routes = [
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'forgotpass',
     component: ForgotpassComponent,
+  },
+  {
+    path: 'franchisehp',
+    component: FranchisehpComponent,
   }, 
   {
     path: '',

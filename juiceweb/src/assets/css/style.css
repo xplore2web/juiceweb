@@ -807,7 +807,7 @@ img.w3order-img {
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../assets/images/move-up.png") no-repeat 0px 0px;
+	background: url("../../assets/images/move-up.png") no-repeat 0px 0px;
 	z-index:999;
 }
 #toTopHover {
@@ -1973,7 +1973,7 @@ p.single-price-text {
 :-ms-input-placeholder {  
    color: #999;  
 } 
-.login-agileinfo input[type="submit"] {
+.login-agileinfo input[type="submit"] select{
     font-size: 1em;
     color: #0c0c0c;
     background: #08cae2;
@@ -3467,14 +3467,14 @@ h3.w3ls-title {
 	margin: 2.5em auto 1em;
     padding: 0.5em 1.5em 1.5em;
 }
-.login-agileinfo input[type="text"], .login-agileinfo input[type="password"], .login-agileinfo input[type="email"] {
+.login-agileinfo input[type="text"], .login-agileinfo input[type="password"], .login-agileinfo input[type="email"] select{
     font-size: 1em;
 }
 #staplesbmincart {
     left: 43%;
     top: 19.5%;
 }
-.login-agileinfo input[type="submit"] { 
+.login-agileinfo input[type="submit"] select { 
     padding: 0.8em; 
     margin: 1.5em 0; 
 }
@@ -3754,10 +3754,10 @@ p {
 .login-agileinfo {
     width: 69%;
 }
-.login-agileinfo input[type="submit"] {
+.login-agileinfo input[type="submit"] select{
     padding: 0.7em; 
 }
-.login-agileinfo input[type="text"], .login-agileinfo input[type="password"], .login-agileinfo input[type="email"] {
+.login-agileinfo input[type="text"], .login-agileinfo input[type="password"], .login-agileinfo input[type="email"] select{
     font-size: 0.9em;
 }
 .offers-right p { 
@@ -4278,3 +4278,7 @@ img.w3order-img {
 }
 }
 /*-- //responsive-design --*/
+
+.aligncenter{
+    text-align: center;
+}
