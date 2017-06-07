@@ -23,6 +23,10 @@ import { SuperadminComponent } from './_components/superadmin/superadmin.compone
 import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
 import { FranchisehpComponent } from './_components/franchisehp/franchisehp.component';
 import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
+import { OffersComponent } from './_components/offers/offers.component';
+import { OrderstatusComponent } from './_components/orderstatus/orderstatus.component';
+import { TcComponent } from './_components/tc/tc.component';
+import { HelpComponent } from './_components/help/help.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { ForgotpassComponent } from './_components/forgotpass/forgotpass.compone
     SuperadminComponent,
     ShopadminComponent,
     FranchisehpComponent,
-    ForgotpassComponent
+    ForgotpassComponent,
+    OffersComponent,
+    OrderstatusComponent,
+    TcComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,10 @@ import { SuperadminComponent } from './_components/superadmin/superadmin.compone
 import { ShopadminComponent } from './_components/shopadmin/shopadmin.component';
 import { ForgotpassComponent } from './_components/forgotpass/forgotpass.component';
 import { FranchisehpComponent } from './_components/franchisehp/franchisehp.component';
+import { OffersComponent } from './_components/offers/offers.component';
+import { OrderstatusComponent } from './_components/orderstatus/orderstatus.component';
+import { TcComponent } from './_components/tc/tc.component';
+import { HelpComponent } from './_components/help/help.component';
 
 // Route config let's you map routes to components
 const routes: Routes = [
@@ -22,6 +26,22 @@ const routes: Routes = [
     path: 'home',
     component: HomepageComponent,
   },
+  {
+    path: 'offers',
+    component: OffersComponent,
+  }, 
+  {
+    path: 'help',
+    component: HelpComponent,
+  }, 
+  {
+    path: 'orderstatus',
+    component: OrderstatusComponent,
+  }, 
+  {
+    path: 'tc',
+    component: TcComponent,
+  }, 
    {
     path: 'signup',
     component: MySignupComponent,

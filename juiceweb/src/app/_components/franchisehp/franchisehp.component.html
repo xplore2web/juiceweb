@@ -1,6 +1,3 @@
-<!--<p>
-  franchisehp works!
-</p>-->
 <app-header> </app-header>
 <div class="login-page about">
     <img class="login-w3img" src="../../../assets/images/img3.jpg" alt="">
@@ -11,16 +8,16 @@
                     <input class="agile-ltext" type="text" name="Juice Name" placeholder="Juice Name" required="">
                         <input class="agile-ltext" type="text" name="Juice price" placeholder="Juice Price" required="">
                             <input class="agile-ltext" type="text" name="Juice id" placeholder="Juice Id" required="">
-                                
-                                     <label>Juice Type:</label>
-                                     <select class="agile-ltext" name="juiceType" (change)="selectedjuice(juiceType)" [(ngModel)]="juiceType" >
-                                     <option *ngFor="let juice of juiceType" [value]="juice.type">{{juice.type}}</option>
-                                    </select>
-                                    <label>Availability:</label>
-                                    <select name="availability" (change)="selectedavail(availability)" [(ngModel)]="availability" >
-                                        <option *ngFor="let available of availability" [value]="available.avail">{{available.avail}}</option>
-                                    </select>
-                          
+
+                                <label>Juice Type:</label>
+                                <select class="agile-ltext" name="juiceType" (change)="selectedjuice(juiceType)" [(ngModel)]="juiceType" >
+                                    <option *ngFor="let juice of juiceType" [value]="juice.type">{{juice.type}}</option>
+                                </select>
+                                <label>Availability:</label>
+                                <select name="availability" (change)="selectedavail(availability)" [(ngModel)]="availability" >
+                                    <option *ngFor="let available of availability" [value]="available.avail">{{available.avail}}</option>
+                                </select>
+
 
 
                                 <!--                            <input class="agile-ltext" type="text" name="Franchise name" placeholder="Area" required="">
