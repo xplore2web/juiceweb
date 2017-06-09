@@ -27,6 +27,7 @@ import { OffersComponent } from './_components/offers/offers.component';
 import { OrderstatusComponent } from './_components/orderstatus/orderstatus.component';
 import { TcComponent } from './_components/tc/tc.component';
 import { HelpComponent } from './_components/help/help.component';
+import {GooglePlaceModule} from 'ng2-google-place-autocomplete';
 
 @NgModule({
   declarations: [
@@ -59,9 +60,16 @@ import { HelpComponent } from './_components/help/help.component';
     FormsModule,
     HttpModule,
     routing,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    GooglePlaceModule
   ],
   providers: [Http],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+//please install these packages
+// npm i --save ng2-google-place-autocomplete
