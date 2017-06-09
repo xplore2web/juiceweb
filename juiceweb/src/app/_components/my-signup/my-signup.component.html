@@ -4,10 +4,10 @@
         <h3 class="w3ls-title w3ls-title1">Sign Up to your account</h3>  
         <div class="login-agileinfo"> 
             <form action="#" method="post"> 
-                <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">
-                <input class="agile-ltext" type="email" name="Your Email" placeholder="Your Email" required="">
-                <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
-                <input class="agile-ltext" type="password" name="Confirm Password" placeholder="Confirm Password" required="">
+                <input class="agile-ltext" [(ngModel)]="signUpModel.username" type="text" name="Username" placeholder="Username" required="">
+                <input class="agile-ltext" [(ngModel)]="signUpModel.email" type="email" name="Your Email" placeholder="Your Email" required="">
+                <input class="agile-ltext" [(ngModel)]="signUpModel.password" type="password" name="password" placeholder="Password" required="">
+                <input class="agile-ltext" [(ngModel)]="confirmPassword"  type="password" name="Confirm Password" placeholder="Confirm Password" required="">
                 <div class="wthreelogin-text"> 
                     <ul> 
                         <li>
@@ -18,7 +18,7 @@
                     </ul>
                     <div class="clearfix"> </div>
                 </div>   
-                <input type="submit" value="Sign Up">
+                <input (click)="submitForm()" type="submit" value="Sign Up">
             </form>
             <p>Already have an account?  <a [routerLink]="['/login']"> Login Now!</a></p> 
             <p>SignUp  As Franchise?  <a [routerLink]="['/shopadmin']"> Sign up!</a></p>

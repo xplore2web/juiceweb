@@ -5,14 +5,14 @@
         <h3 class="w3ls-title w3ls-title1">Login to your account</h3>  
         <div class="login-agileinfo"> 
             <form action="#" method="post"> 
-                <input class="agile-ltext" type="Email" name="email" placeholder="Email" required="">
+                <input class="agile-ltext" type="Email" [(ngModel)]="forgotpassModel.email" name="email" placeholder="Email" required="">
                 <div class="wthreelogin-text"> 
                     <ul> 
                         
                     </ul>
                     <div class="clearfix"> </div>
                 </div>   
-                <input type="submit" value="Recover">
+                <input (click)="submitEmail()" type="submit" value="Recover">
             </form>
             <p>Don't have an Account? <a [routerLink]="['/login']"> Login Now!</a></p> 
         </div>	 

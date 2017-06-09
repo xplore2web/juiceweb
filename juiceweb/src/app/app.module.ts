@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './_components/signup/signup.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { LoginComponent } from './_components/login/login.component';
 import { MySignupComponent } from './_components/my-signup/my-signup.component';
@@ -32,7 +31,6 @@ import {GooglePlaceModule} from 'ng2-google-place-autocomplete';
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
     HeaderComponent,
     LoginComponent,
     MySignupComponent,

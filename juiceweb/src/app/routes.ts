@@ -4,7 +4,6 @@ import {HomepageComponent} from 'app/_components/homepage/homepage.component';
 import {OrderComponent} from 'app/_components/order/order.component';
 import {EmployeeComponent} from 'app/_components/employee/employee.component';
 import {DashboardComponent} from 'app/_components/dashboard/dashboard.component';
-import {SignupComponent} from 'app/_components/signup/signup.component';
 import {LoginComponent} from 'app/_components/login/login.component';
 import {MenuComponent} from './_components/menu/menu.component';
 import {AboutComponent} from './_components/about/about.component';
